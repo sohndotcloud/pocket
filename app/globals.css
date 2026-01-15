@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@import '@fontsource/inter/400.css';
+
+:root {
+  --foreground: #ffffff;
+  --background: #171717;
+}
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+ul li {
+  @apply mx-5
+}

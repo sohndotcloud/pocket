@@ -1,0 +1,45 @@
+{
+  "name": "pic-pocket",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build --turbopack",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@fontsource/inter": "^5.2.7",
+    "@reduxjs/toolkit": "^2.9.0",
+    "@supabase/auth-helpers-nextjs": "^0.15.0",
+    "@supabase/supabase-js": "^2.90.1",
+    "@types/xml-parser": "^1.2.33",
+    "@vercel/blob": "^2.0.0",
+    "dompurify": "^3.2.7",
+    "epub.js": "^0.2.15",
+    "fast-xml-parser": "^5.3.0",
+    "formidable-serverless": "^1.1.1",
+    "framer-motion": "^12.23.12",
+    "jszip": "^3.10.1",
+    "next": "15.5.9",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-redux": "^9.2.0",
+    "typewriter-effect": "^2.22.0",
+    "xml-parser": "^1.2.1"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/formidable": "^3.4.6",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "epubjs": "^0.3.93",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.3",
+    "tailwindcss": "^4",
+    "tailwindcss-motion": "^1.1.1",
+    "typescript": "^5"
+  }
+}
