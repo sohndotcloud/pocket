@@ -56,7 +56,7 @@ export default function Nav({wave, themePack, openToggleMenu}: NavProps) {
           transition={{ duration: 1 }}><Link className={"hover:" + themePack.font3} href="/">Home</Link></motion.li>
         <motion.li initial={{ opacity: 0, x: +25}}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }}><Link className={"hover:" + themePack.font3} href="https://github.com/sohndotcloud/sohn.cloud">About</Link></motion.li>
+          transition={{ duration: 1 }}><Link className={"hover:" + themePack.font3} href="https://github.com/sohndotcloud/pocket">About</Link></motion.li>
           <motion.li initial={{ opacity: 0, x: +25}}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}><Link className={"hover:" + themePack.font3} href="https://github.com/sohndotcloud">Portfolio</Link></motion.li>
