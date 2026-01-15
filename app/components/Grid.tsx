@@ -74,7 +74,7 @@ const ImageGrid = () => {
     }, []);
 
     return (
-            <div style={{ padding: "80px" }}>
+            <div style={{ padding: "500px" }}>
                 <div className="flex flex-col gap-4 w-full max-w-sm mx-auto">
                 <div className="flex items-center gap-3">
                 <label className="cursor-pointer">
