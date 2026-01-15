@@ -19,8 +19,23 @@ export async function GET(req: NextRequest) {
     }
   )
 
-  await supabase.auth.signOut({ scope: "global" })
+  await supabase.auth.admin.signOut((await supabase.auth.getUser()).data.user!.id)
   const res = NextResponse.redirect(new URL("/login", req.url), 302);
+  res.cookies.set("sb-access-token", "", {
+    path: "/",        
+    maxAge: 0,        
+    httpOnly: true,    
+    secure: true,     
+    sameSite: "lax",   
+  });
+
+  res.cookies.set("sb-refresh-token", "", {
+    path: "/",         
+    maxAge: 0,         
+    httpOnly: true,    
+    secure: true,      
+    sameSite: "lax",   
+  });
 
   return res;
 }
