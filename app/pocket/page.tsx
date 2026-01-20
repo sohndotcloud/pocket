@@ -61,7 +61,7 @@ export default function Home() {
           <li><a href="https://github.com/sohndotcloud/pocket" className={"block py-2 font-bold rounded hover:" + themePack.background}>About</a></li>
           <li><a href="https://github.com/sohndotcloud" className={"block py-2 font-bold rounded hover:" + themePack.background}>Portfolio</a></li>
           <li><a href="https://linkedin.com/in/nils-sohn" className={"block py-2 font-bold rounded hover:" + themePack.background}>Contact</a></li>
-          <li><a href="/api/logout/" className={"block py-2 font-bold rounded hover:" + themePack.background}>Logout</a></li>
+          {/* <li><a href="/api/logout/" className={"block py-2 font-bold rounded hover:" + themePack.background}>Logout</a></li> */}
         </ul>
       </div>
     </nav>
