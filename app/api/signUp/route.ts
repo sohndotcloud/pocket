@@ -6,21 +6,8 @@ export const runtime = "nodejs";
 export async function POST(req: NextRequest) {
   const formData = await req.formData();
 
-  const authHeader = req.cookies.get("sb-access-token")?.value;
-
-  if (authHeader === undefined) {
-    return NextResponse.json(authHeader, { status: 401 });
-  }
-
   const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY!,
-    {
-      global: {
-        headers: {
-          Authorization: `Bearer ${authHeader}`,
-        },
-      },
-    }
+    process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY!
   )
 
   const { error } = await supabase.auth.signUp({

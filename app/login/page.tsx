@@ -29,6 +29,8 @@ export default function AuthForm() {
     setHeaders(headers)
     if (response.status === 200) {
       setMessage("Confirmation email has been sent.");
+    } else if (response.status === 500) {
+      setMessage("There was an error signing up.")
     }
     setLoading(false);
   };
